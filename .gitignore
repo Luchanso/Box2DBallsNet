@@ -1,3 +1,4 @@
 node_modules
+
 static/js
-index.html
+static/index.html
