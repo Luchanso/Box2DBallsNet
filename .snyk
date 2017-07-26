@@ -1,0 +1,66 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.1
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:qs:20170213':
+    - gulp-connect > connect > qs:
+        reason: None given
+        expires: '2017-08-25T10:10:34.745Z'
+    - gulp-connect > connect > body-parser > qs:
+        reason: None given
+        expires: '2017-08-25T10:10:34.745Z'
+    - gulp-connect > tiny-lr > qs:
+        reason: None given
+        expires: '2017-08-25T10:10:34.745Z'
+    - gulp-connect > tiny-lr > body-parser > qs:
+        reason: None given
+        expires: '2017-08-25T10:10:34.745Z'
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:minimatch:20160620':
+    - gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2017-07-26T10:10:34.762Z'
+    - gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2017-07-26T10:10:34.762Z'
+    - gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2017-07-26T10:10:34.762Z'
+    - gulp > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2017-07-26T10:10:34.762Z'
+  'npm:ms:20170412':
+    - socket.io > socket.io-adapter > debug > ms:
+        patched: '2017-07-26T10:10:34.762Z'
+    - gulp-connect > connect > serve-favicon > ms:
+        patched: '2017-07-26T10:10:34.762Z'
+    - gulp-connect > connect > connect-timeout > ms:
+        patched: '2017-07-26T10:10:34.762Z'
+    - gulp-connect > connect > debug > ms:
+        patched: '2017-07-26T10:10:34.762Z'
+    - gulp-connect > connect > express-session > debug > ms:
+        patched: '2017-07-26T10:10:34.762Z'
+    - gulp-connect > connect > finalhandler > debug > ms:
+        patched: '2017-07-26T10:10:34.762Z'
+    - gulp-connect > connect > morgan > debug > ms:
+        patched: '2017-07-26T10:10:34.762Z'
+    - gulp-connect > connect > serve-index > debug > ms:
+        patched: '2017-07-26T10:10:34.762Z'
+    - gulp-connect > tiny-lr > body-parser > debug > ms:
+        patched: '2017-07-26T10:10:34.762Z'
+    - gulp-connect > tiny-lr > debug > ms:
+        patched: '2017-07-26T10:10:34.762Z'
+    - gulp-connect > connect > body-parser > debug > ms:
+        patched: '2017-07-26T10:10:34.762Z'
+    - gulp-connect > connect > compression > debug > ms:
+        patched: '2017-07-26T10:10:34.762Z'
+    - gulp-connect > connect > connect-timeout > debug > ms:
+        patched: '2017-07-26T10:10:34.762Z'
+    - gulp-connect > connect > serve-static > send > debug > ms:
+        patched: '2017-07-26T10:10:34.762Z'
+    - gulp-connect > connect > serve-static > send > ms:
+        patched: '2017-07-26T10:10:34.762Z'
+    - socket.io > socket.io-adapter > socket.io-parser > debug > ms:
+        patched: '2017-07-26T10:10:34.762Z'
+  'npm:negotiator:20160616':
+    - gulp-connect > connect > compression > accepts > negotiator:
+        patched: '2017-07-26T10:10:34.762Z'
+    - gulp-connect > connect > serve-index > accepts > negotiator:
+        patched: '2017-07-26T10:10:34.762Z'
