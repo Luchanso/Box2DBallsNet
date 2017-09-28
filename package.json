@@ -14,7 +14,7 @@
     "gulp-uglify": "^1.2.0",
     "gulp-watch": "^4.2.4",
     "socket.io": "^2.0.2",
-    "snyk": "^1.36.2"
+    "snyk": "^1.41.1"
   },
   "devDependencies": {},
   "scripts": {
